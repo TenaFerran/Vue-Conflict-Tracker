@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 
-const BASE_URL = import.meta.env.API_URL
+const BASE_URL = import.meta.env.VITE_API_URL
 
 export const useConflictsStore = defineStore('conflicts', () => {
   const items = ref([])
